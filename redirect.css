@@ -1,86 +1,51 @@
-html,body{
-    margin:0px;
-    height:100%;
-  }
-  .bg_heart{
-    position:relative;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-   overflow:hidden;
-    background-image:url("https://i.pinimg.com/originals/51/d8/37/51d8374126446d495348b6032202126f.jpg");
-    background-size:100% 100%;
-    z-index:-1;
-  }
-  
-  .container{
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    text-align:center;
-    color:white;
-    font-family:cursive;
-  }
-  
-  
-  .heart{
-    position:absolute;
-    top:-50%;
-    transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-    -m-transform:rotate(-45deg);
-  }
-  .heart:before{
-    position:absolute;
-    top:-50%;
-    left:0;
-    display:block;
-    content:"";
-    width:100%;
-    height:100%;
-    background:inherit;
-    border-radius:100%;
-  }
-  .heart:after{
-    position:absolute;
-    top:0;
-    right:-50%;
-    display:block;
-    content:"";
-    width:100%;
-    height:100%;
-    background:inherit;
-    border-radius:100%;
-  }
-  
-  @keyframes love {
-    0%{top:110%}
-  }
-  @-webkit-keyframes love {
-    0%{top:110%}
-  }
-  @-moz-keyframes love {
-    0%{top:110%}
-  }
-  @-ms-keyframes love {
-    0%{top:110%}
-  }
-  .big-button {
-    display: block;
-    margin: 0 auto;
-    padding: 180px 150px;
-    background-color: rgb(109, 34, 34);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 56px;
-    cursor: pointer;
-  }
-  
-  .big-button:hover {
-    background-color: rgb(235, 109, 214);
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.bg_heart {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('CHELSEA.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.circle {
+  position: relative;
+  z-index: 2;
+}
+
+.big-button {
+  display: inline-block;
+  padding: 55px 75px;
+  font-size: 38px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #f187b098;
+  border: none;
+  border-radius: 120px;
+  transition: background-color 0.3s;
+}
+
+.big-button:hover {
+  background-color: #eb1313b4;
+}
+
+.circle-button {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+
+}
+.text1 { color :#f0f0f0;
+padding : 55px 75px;
+font-size: 32px;}
